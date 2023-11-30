@@ -15,7 +15,7 @@ int	main(int ac, char **av, char **env)
 {
 	t_pipex data;
 	if (ac != 5)
-		return(write(1,"Usage infile < cmd1 | cmd2 > outfile", 37));
+		return(write(1,"Usage < infile cmd1 | cmd2 > outfile", 37));
 	set_values(&data,av[1],av[ac - 1]);
 	if(pipe(data.fd) == -1)
 		perror("pipe");
