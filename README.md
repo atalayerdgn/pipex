@@ -1,6 +1,5 @@
 # PIPEX
-x This project aims to deepen your understanding of the two concepts that you already know: Redirections and Pipes. It is
-an introductory project for the bigger UNIX projects that will appear later on in the cursus
+x This project aims to deepen your understanding of the two concepts that you already know: Redirections and Pipes.
 
 # System Calls in C
 
@@ -218,4 +217,11 @@ waitpid(child_pid, NULL, 0);
 - Be cautious when working with `fork`, `pipe`, and `execve` to avoid resource leaks or undefined behavior.
 
 ---
+
+
+```bash
+make
+./pipex infile "grep a1" "wc -w" outfile
+```
+
 
